@@ -1,0 +1,2 @@
+C:\Users\gamze\source\repos\izibiz.Application\izibiz.CONTROLER\obj\Debug\izibiz.CONTROLER.csprojAssemblyReference.cache
+C:\Users\gamze\source\repos\izibiz.Application\izibiz.CONTROLER\obj\Debug\izibiz.CONTROLER.csproj.CoreCompileInputs.cache
