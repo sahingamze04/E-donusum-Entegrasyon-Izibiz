@@ -117,17 +117,32 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="arshiveInvoice" xml:space="preserve">
+    <value>Arshive Invoice</value>
+  </data>
   <data name="ch_language" xml:space="preserve">
     <value>Choose Language</value>
   </data>
-  <data name="e-arsiv" xml:space="preserve">
+  <data name="commingInvoice" xml:space="preserve">
+    <value>Comming Invoice</value>
+  </data>
+  <data name="eArsiv" xml:space="preserve">
     <value>E- Archive</value>
   </data>
-  <data name="e-fatura" xml:space="preserve">
+  <data name="eFatura" xml:space="preserve">
     <value>E- İnvoice</value>
   </data>
-  <data name="e-irsaliye" xml:space="preserve">
+  <data name="eIrsaliye" xml:space="preserve">
     <value>E-Dispatch</value>
+  </data>
+  <data name="eMustahsil" xml:space="preserve">
+    <value>E-Manufacturers</value>
+  </data>
+  <data name="eReconciliation" xml:space="preserve">
+    <value>E-Reconciliation</value>
+  </data>
+  <data name="eSerbestMeslek" xml:space="preserve">
+    <value>E- Free Job</value>
   </data>
   <data name="form_fatura" xml:space="preserve">
     <value>İzibiz Desktop | E-İnvoice</value>
@@ -138,6 +153,9 @@
   <data name="form_login_title" xml:space="preserve">
     <value>İzibiz Desktop | Login</value>
   </data>
+  <data name="listCommingInvoice" xml:space="preserve">
+    <value>List Comming Invoice</value>
+  </data>
   <data name="login" xml:space="preserve">
     <value>Login</value>
   </data>
@@ -147,8 +165,17 @@
   <data name="loginWarring" xml:space="preserve">
     <value>Login is not succes !  Please check your username and password</value>
   </data>
+  <data name="newInvoice" xml:space="preserve">
+    <value>+New Invoice </value>
+  </data>
   <data name="password" xml:space="preserve">
     <value>Password</value>
+  </data>
+  <data name="sentInvoice" xml:space="preserve">
+    <value>Sent Invoice</value>
+  </data>
+  <data name="settings" xml:space="preserve">
+    <value>Settings</value>
   </data>
   <data name="showPassword" xml:space="preserve">
     <value>Show Password</value>

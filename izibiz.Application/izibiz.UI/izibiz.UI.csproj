@@ -129,6 +129,14 @@
       <Project>{24e9752e-b999-4e34-9f8c-d5b6596d6fe8}</Project>
       <Name>izibiz.CONTROLLER</Name>
     </ProjectReference>
+    <ProjectReference Include="..\izibiz.MODEL\izibiz.MODEL.csproj">
+      <Project>{9a8efcb9-ae5d-4073-bb83-d1512ef1c58a}</Project>
+      <Name>izibiz.MODEL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\izibiz.SERVICES\izibiz.SERVICES.csproj">
+      <Project>{6EBDB6B7-360A-454F-AB35-DE0D2C32905A}</Project>
+      <Name>izibiz.SERVICES</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

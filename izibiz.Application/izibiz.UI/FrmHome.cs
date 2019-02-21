@@ -47,12 +47,22 @@ namespace izibiz.UI
             }
 
             //eleman text yazdır
-            this.Text = Localization.form_home_title;
-            btnFatura.Text = Localization.e_fatura;
-            btnArsiv.Text = Localization.e_arsiv;
-            btnIrsaliye.Text = Localization.e_irsaliye;
+            this.Text = Localization.formHomeTitle;
+            btnFatura.Text = Localization.eFatura;
+            btnArsiv.Text = Localization.eArsiv;
+            btnIrsaliye.Text = Localization.eIrsaliye;
+            btnAyarlar.Text =Localization.settings;
+            btnMutabakat.Text =Localization.eReconciliation;
+            btnSmm.Text = Localization.eSerbestMeslek;
+            btnMüstahsil.Text = Localization.eMustahsil;
+
         }
 
-      
+        private void btnFatura_Click_1(object sender, EventArgs e)
+        {
+            FrmInvoice frmInvoice = new FrmInvoice();
+            frmInvoice.Show();
+            this.Hide();
+        }
     }
 }

@@ -12,14 +12,14 @@ namespace izibiz.CONTROLLER.Web_Services
    public class AuthenticationWebService
     {
 
-      AuthenticationServicePortClient Auth = new AuthenticationServicePortClient();
-
+       AuthenticationServicePortClient  Auth= new AuthenticationServicePortClient();
 
 
         public string Login(string usurname, string password)
         {
-           
-                var req = new SERVICES.serviceAuth.LoginRequest
+            
+
+            var req = new SERVICES.serviceAuth.LoginRequest
                 {
                     USER_NAME = usurname,
                     PASSWORD = password,
@@ -45,6 +45,7 @@ namespace izibiz.CONTROLLER.Web_Services
                 //basarılı gırıs
                 else
                 {
+                Session.Default.id = sesionId;
                     return sesionId;
                 }
 

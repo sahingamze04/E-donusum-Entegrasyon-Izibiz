@@ -61,6 +61,15 @@ namespace izibiz.UI {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Taslak Faturalar.
+        /// </summary>
+        internal static string arshiveInvoice {
+            get {
+                return ResourceManager.GetString("arshiveInvoice", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Dil Seçimi.
         /// </summary>
         internal static string ch_language {
@@ -70,56 +79,101 @@ namespace izibiz.UI {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Gelen Faturalar.
+        /// </summary>
+        internal static string commingInvoice {
+            get {
+                return ResourceManager.GetString("commingInvoice", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to E- Arşiv.
         /// </summary>
-        internal static string e_arsiv {
+        internal static string eArsiv {
             get {
-                return ResourceManager.GetString("e-arsiv", resourceCulture);
+                return ResourceManager.GetString("eArsiv", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to E- Fatura.
         /// </summary>
-        internal static string e_fatura {
+        internal static string eFatura {
             get {
-                return ResourceManager.GetString("e-fatura", resourceCulture);
+                return ResourceManager.GetString("eFatura", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to E-İrsailye.
         /// </summary>
-        internal static string e_irsaliye {
+        internal static string eIrsaliye {
             get {
-                return ResourceManager.GetString("e-irsaliye", resourceCulture);
+                return ResourceManager.GetString("eIrsaliye", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to E-Müstahsil.
+        /// </summary>
+        internal static string eMustahsil {
+            get {
+                return ResourceManager.GetString("eMustahsil", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to E-Mutabakat.
+        /// </summary>
+        internal static string eReconciliation {
+            get {
+                return ResourceManager.GetString("eReconciliation", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to E- Serbest Meslek.
+        /// </summary>
+        internal static string eSerbestMeslek {
+            get {
+                return ResourceManager.GetString("eSerbestMeslek", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to İzibiz Masaüstü | E-Fatura İşlemleri.
         /// </summary>
-        internal static string form_fatura {
+        internal static string formFatura {
             get {
-                return ResourceManager.GetString("form_fatura", resourceCulture);
+                return ResourceManager.GetString("formFatura", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to İzibiz Masaüstü | Anasayfa.
         /// </summary>
-        internal static string form_home_title {
+        internal static string formHomeTitle {
             get {
-                return ResourceManager.GetString("form_home_title", resourceCulture);
+                return ResourceManager.GetString("formHomeTitle", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to İzibiz Masaüstü | Giriş.
         /// </summary>
-        internal static string form_login_title {
+        internal static string formLoginTitle {
             get {
-                return ResourceManager.GetString("form_login_title", resourceCulture);
+                return ResourceManager.GetString("formLoginTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Gelen Fatura Listesi.
+        /// </summary>
+        internal static string listCommingInvoice {
+            get {
+                return ResourceManager.GetString("listCommingInvoice", resourceCulture);
             }
         }
         
@@ -151,11 +205,38 @@ namespace izibiz.UI {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to +Yeni Fatura.
+        /// </summary>
+        internal static string newInvoice {
+            get {
+                return ResourceManager.GetString("newInvoice", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Şifre.
         /// </summary>
         internal static string password {
             get {
                 return ResourceManager.GetString("password", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Gönderilen Faturalar.
+        /// </summary>
+        internal static string sentInvoice {
+            get {
+                return ResourceManager.GetString("sentInvoice", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Ayarlar.
+        /// </summary>
+        internal static string settings {
+            get {
+                return ResourceManager.GetString("settings", resourceCulture);
             }
         }
         

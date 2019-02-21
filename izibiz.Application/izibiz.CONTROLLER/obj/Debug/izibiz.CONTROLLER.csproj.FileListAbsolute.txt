@@ -19,3 +19,5 @@ C:\Users\gamze\Desktop\izibiz.Application\izibiz.CONTROLLER\obj\Debug\izibiz.CON
 C:\Users\gamze\Desktop\izibiz.Application\izibiz.CONTROLLER\obj\Debug\izibiz.CONTROLLER.csproj.CopyComplete
 C:\Users\gamze\Desktop\izibiz.Application\izibiz.CONTROLLER\obj\Debug\izibiz.CONTROLLER.dll
 C:\Users\gamze\Desktop\izibiz.Application\izibiz.CONTROLLER\obj\Debug\izibiz.CONTROLLER.pdb
+C:\Users\gamze\Desktop\izibiz.Application\izibiz.CONTROLLER\bin\Debug\izibiz.MODEL.dll
+C:\Users\gamze\Desktop\izibiz.Application\izibiz.CONTROLLER\bin\Debug\izibiz.MODEL.pdb

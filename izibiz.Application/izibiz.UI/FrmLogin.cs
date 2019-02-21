@@ -37,11 +37,12 @@ namespace izibiz.UI
             }
             else{
                 try{
-                    AuthenticationWebService authenticationWebService = new AuthenticationWebService();
+                    CONTROLLER.Web_Services.AuthenticationWebService authenticationWebService = new CONTROLLER.Web_Services.AuthenticationWebService();
                    string sesoin= authenticationWebService.Login(txtUsername.Text, txtPassword.Text);
                     if (sesoin != "no-user"){
-                      
-                        //gecis yap
+                        FrmHome frmHome = new FrmHome();
+                        frmHome.Show();
+                        this.Hide();
                     }
                 }
                 catch(Exception ex){
@@ -66,7 +67,7 @@ namespace izibiz.UI
             }
 
             //eleman text yazdır
-            this.Text = Localization.form_login_title;
+            this.Text = Localization.formLoginTitle;
             lblUsername.Text = Localization.username;
             lblPassword.Text = Localization.password;
             btn_login.Text = Localization.login;

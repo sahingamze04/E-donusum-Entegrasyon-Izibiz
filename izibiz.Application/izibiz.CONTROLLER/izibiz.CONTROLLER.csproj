@@ -53,6 +53,10 @@
     <Compile Include="WebServices\InvoiceWebService.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\izibiz.MODEL\izibiz.MODEL.csproj">
+      <Project>{9a8efcb9-ae5d-4073-bb83-d1512ef1c58a}</Project>
+      <Name>izibiz.MODEL</Name>
+    </ProjectReference>
     <ProjectReference Include="..\izibiz.SERVICES\izibiz.SERVICES.csproj">
       <Project>{6ebdb6b7-360a-454f-ab35-de0d2c32905a}</Project>
       <Name>izibiz.SERVICES</Name>

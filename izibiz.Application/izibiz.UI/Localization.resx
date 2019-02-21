@@ -117,26 +117,44 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="arshiveInvoice" xml:space="preserve">
+    <value>Taslak Faturalar</value>
+  </data>
   <data name="ch_language" xml:space="preserve">
     <value>Dil Seçimi</value>
   </data>
-  <data name="e-arsiv" xml:space="preserve">
+  <data name="commingInvoice" xml:space="preserve">
+    <value>Gelen Faturalar</value>
+  </data>
+  <data name="eArsiv" xml:space="preserve">
     <value>E- Arşiv</value>
   </data>
-  <data name="e-fatura" xml:space="preserve">
+  <data name="eFatura" xml:space="preserve">
     <value>E- Fatura</value>
   </data>
-  <data name="e-irsaliye" xml:space="preserve">
+  <data name="eIrsaliye" xml:space="preserve">
     <value>E-İrsailye</value>
   </data>
-  <data name="form_fatura" xml:space="preserve">
+  <data name="eMustahsil" xml:space="preserve">
+    <value>E-Müstahsil</value>
+  </data>
+  <data name="eReconciliation" xml:space="preserve">
+    <value>E-Mutabakat</value>
+  </data>
+  <data name="eSerbestMeslek" xml:space="preserve">
+    <value>E- Serbest Meslek</value>
+  </data>
+  <data name="formFatura" xml:space="preserve">
     <value>İzibiz Masaüstü | E-Fatura İşlemleri</value>
   </data>
-  <data name="form_home_title" xml:space="preserve">
+  <data name="formHomeTitle" xml:space="preserve">
     <value>İzibiz Masaüstü | Anasayfa</value>
   </data>
-  <data name="form_login_title" xml:space="preserve">
+  <data name="formLoginTitle" xml:space="preserve">
     <value>İzibiz Masaüstü | Giriş</value>
+  </data>
+  <data name="listCommingInvoice" xml:space="preserve">
+    <value>Gelen Fatura Listesi</value>
   </data>
   <data name="login" xml:space="preserve">
     <value>Giriş Yap</value>
@@ -147,8 +165,17 @@
   <data name="loginWarring" xml:space="preserve">
     <value>Giris yapılamadı.. Kullanıcı adı ve kontrol ediniz..</value>
   </data>
+  <data name="newInvoice" xml:space="preserve">
+    <value>+Yeni Fatura</value>
+  </data>
   <data name="password" xml:space="preserve">
     <value>Şifre</value>
+  </data>
+  <data name="sentInvoice" xml:space="preserve">
+    <value>Gönderilen Faturalar</value>
+  </data>
+  <data name="settings" xml:space="preserve">
+    <value>Ayarlar</value>
   </data>
   <data name="showPassword" xml:space="preserve">
     <value>Şifreyi Göster</value>

@@ -46,6 +46,7 @@
             this.btnAyarlar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnAyarlar.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.btnAyarlar.FlatAppearance.BorderSize = 0;
+            this.btnAyarlar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.btnAyarlar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAyarlar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btnAyarlar.ForeColor = System.Drawing.Color.White;
@@ -62,7 +63,9 @@
             this.btnFatura.BackColor = System.Drawing.Color.CadetBlue;
             this.btnFatura.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnFatura.BackgroundImage")));
             this.btnFatura.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnFatura.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnFatura.FlatAppearance.BorderSize = 0;
+            this.btnFatura.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.btnFatura.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnFatura.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btnFatura.ForeColor = System.Drawing.Color.Snow;
@@ -73,12 +76,15 @@
             this.btnFatura.Text = "E-Fatura";
             this.btnFatura.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnFatura.UseVisualStyleBackColor = false;
+            this.btnFatura.Click += new System.EventHandler(this.btnFatura_Click_1);
             // 
             // btnSmm
             // 
             this.btnSmm.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnSmm.BackgroundImage")));
             this.btnSmm.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnSmm.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnSmm.FlatAppearance.BorderSize = 0;
+            this.btnSmm.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.btnSmm.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSmm.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btnSmm.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
@@ -95,7 +101,9 @@
             this.btnArsiv.BackColor = System.Drawing.Color.CadetBlue;
             this.btnArsiv.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnArsiv.BackgroundImage")));
             this.btnArsiv.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnArsiv.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnArsiv.FlatAppearance.BorderSize = 0;
+            this.btnArsiv.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.btnArsiv.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnArsiv.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btnArsiv.ForeColor = System.Drawing.SystemColors.HighlightText;
@@ -111,7 +119,9 @@
             // 
             this.btnMüstahsil.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnMüstahsil.BackgroundImage")));
             this.btnMüstahsil.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnMüstahsil.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnMüstahsil.FlatAppearance.BorderSize = 0;
+            this.btnMüstahsil.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.btnMüstahsil.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnMüstahsil.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btnMüstahsil.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
@@ -128,7 +138,9 @@
             this.btnIrsaliye.BackColor = System.Drawing.Color.CadetBlue;
             this.btnIrsaliye.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnIrsaliye.BackgroundImage")));
             this.btnIrsaliye.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnIrsaliye.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnIrsaliye.FlatAppearance.BorderSize = 0;
+            this.btnIrsaliye.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.btnIrsaliye.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnIrsaliye.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btnIrsaliye.ForeColor = System.Drawing.SystemColors.HighlightText;
@@ -144,7 +156,9 @@
             // 
             this.btnMutabakat.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnMutabakat.BackgroundImage")));
             this.btnMutabakat.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnMutabakat.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnMutabakat.FlatAppearance.BorderSize = 0;
+            this.btnMutabakat.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.btnMutabakat.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnMutabakat.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btnMutabakat.ForeColor = System.Drawing.Color.White;
@@ -169,6 +183,7 @@
             this.Controls.Add(this.btnMüstahsil);
             this.Controls.Add(this.btnIrsaliye);
             this.Controls.Add(this.btnMutabakat);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "FrmHome";

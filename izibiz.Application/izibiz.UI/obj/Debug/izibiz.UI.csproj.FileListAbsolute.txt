@@ -42,3 +42,5 @@ C:\Users\gamze\Desktop\izibiz.Application\izibiz.UI\obj\Debug\en-US\izibiz.UI.re
 C:\Users\gamze\Desktop\izibiz.Application\izibiz.UI\obj\Debug\izibiz.UI.csproj.CopyComplete
 C:\Users\gamze\Desktop\izibiz.Application\izibiz.UI\obj\Debug\izibiz.UI.exe
 C:\Users\gamze\Desktop\izibiz.Application\izibiz.UI\obj\Debug\izibiz.UI.pdb
+C:\Users\gamze\Desktop\izibiz.Application\izibiz.UI\bin\Debug\izibiz.MODEL.dll
+C:\Users\gamze\Desktop\izibiz.Application\izibiz.UI\bin\Debug\izibiz.MODEL.pdb
