@@ -26,16 +26,18 @@ namespace izibiz.CONTROLLER.Web_Services
                 {
                     REQUEST_HEADER = new REQUEST_HEADERType()
                     {
-                        APPLICATION_NAME = "izibiz.Aplication",
                         SESSION_ID = Session.Default.id,
+                        APPLICATION_NAME = "izibiz.Aplication",
                         COMPRESSED = "N"
                     },
-                    HEADER_ONLY = "Y",
                     INVOICE_SEARCH_KEY = new GetInvoiceRequestINVOICE_SEARCH_KEY()
                     {
-                       READ_INCLUDED = true,
-                        LIMIT = 100,
-                    }
+                        LIMIT = 10,
+                        LIMITSpecified = true,
+                        READ_INCLUDEDSpecified = true,
+                        READ_INCLUDED = true              
+                    },
+                     HEADER_ONLY = "Y"
                 };
 
                 INVOICE[] invoiceArray = EFaturaOIBPortClient.GetInvoice(req);
@@ -63,9 +65,10 @@ namespace izibiz.CONTROLLER.Web_Services
                             setListInvoice.Add(setInvoice);
                         };
 
-         //       DataListInvoice.GelenFaturalar =(DataListInvoice) setListInvoice;
+        //        DataListInvoice.GelenFaturalar =setListInvoice;
                 return setListInvoice;    
             }
+
         }
 
 

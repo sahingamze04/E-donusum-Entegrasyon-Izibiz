@@ -52,18 +52,17 @@ namespace izibiz.UI
         private void itemComingListInvoice_Click(object sender, EventArgs e)
         {
 
-            lblTitle.Text = Localization.commingInvoice;
-            ListInvoiceAddToButtonDataGrid();
+            lblTitle.Text = Localization.commingInvoice; 
             InvoiceWebService invoiceWebService = new InvoiceWebService();
             tableGrid.DataSource = null;
 
             tableGrid.DataSource = invoiceWebService.getInvoiceList();
-
-            
-        
+            ListInvoiceAddToButtonDataGrid();
 
 
-          
+
+
+
 
         }
 
@@ -73,7 +72,7 @@ namespace izibiz.UI
             {
                 accept.Name = "accept";
                 accept.HeaderText = "";
-                accept.Text = "accept";
+                accept.Text = Localization.accept;
                 accept.UseColumnTextForButtonValue = true;
                 if (tableGrid.Columns["accept"] == null)
                 {
@@ -82,10 +81,10 @@ namespace izibiz.UI
             }
             DataGridViewButtonColumn reject = new DataGridViewButtonColumn();
             {
-                accept.Name = "reject";
-                accept.HeaderText = "";
-                accept.Text = "reject";
-                accept.UseColumnTextForButtonValue = true;
+                reject.Name = "reject";
+                reject.HeaderText = "";
+                reject.Text = Localization.reject;
+                reject.UseColumnTextForButtonValue = true;
                 if (tableGrid.Columns["reject"] == null)
                 {
                     this.tableGrid.Columns.Add(reject);

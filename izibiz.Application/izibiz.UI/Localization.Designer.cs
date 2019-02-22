@@ -61,6 +61,15 @@ namespace izibiz.UI {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Kabul Et.
+        /// </summary>
+        internal static string accept {
+            get {
+                return ResourceManager.GetString("accept", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Taslak Faturalar.
         /// </summary>
         internal static string arshiveInvoice {
@@ -219,6 +228,15 @@ namespace izibiz.UI {
         internal static string password {
             get {
                 return ResourceManager.GetString("password", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Red Et.
+        /// </summary>
+        internal static string reject {
+            get {
+                return ResourceManager.GetString("reject", resourceCulture);
             }
         }
         
