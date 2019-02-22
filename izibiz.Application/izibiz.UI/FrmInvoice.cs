@@ -15,6 +15,10 @@ namespace izibiz.UI
 {
     public partial class FrmInvoice : Form
     {
+
+
+
+
         public FrmInvoice()
         {
             InitializeComponent();
@@ -54,20 +58,18 @@ namespace izibiz.UI
 
             lblTitle.Text = Localization.commingInvoice; 
             InvoiceWebService invoiceWebService = new InvoiceWebService();
-            tableGrid.DataSource = null;
 
             tableGrid.DataSource = invoiceWebService.getInvoiceList();
+
             ListInvoiceAddToButtonDataGrid();
-
-
-
-
-
 
         }
 
+
+
         private void ListInvoiceAddToButtonDataGrid()
         {
+
             DataGridViewButtonColumn accept = new DataGridViewButtonColumn();
             {
                 accept.Name = "accept";
@@ -90,10 +92,10 @@ namespace izibiz.UI
                     this.tableGrid.Columns.Add(reject);
                 }
             }
-
-
-
-
         }
+
+
+
+
     }
 }

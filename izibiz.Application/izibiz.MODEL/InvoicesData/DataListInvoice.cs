@@ -7,9 +7,9 @@ using System.Threading.Tasks;
 
 namespace izibiz.MODEL
 {
-    public class DataListInvoice: List<Invoices>
+    public class DataListInvoice: Invoices
     {
-        public static DataListInvoice GelenFaturalar;
+        public static List<Invoices> GelenFaturalar;
         public static DataListInvoice GidenFaturalar;
 
     }

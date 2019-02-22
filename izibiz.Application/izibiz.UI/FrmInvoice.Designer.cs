@@ -42,7 +42,7 @@
             // 
             // menuInvoice
             // 
-            this.menuInvoice.BackColor = System.Drawing.SystemColors.ButtonShadow;
+            this.menuInvoice.BackColor = System.Drawing.SystemColors.ControlDark;
             this.menuInvoice.Dock = System.Windows.Forms.DockStyle.Left;
             this.menuInvoice.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
             this.menuInvoice.GripStyle = System.Windows.Forms.ToolStripGripStyle.Visible;
@@ -52,8 +52,9 @@
             this.itemDraftInvoice,
             this.itemNewInvoice});
             this.menuInvoice.Location = new System.Drawing.Point(0, 0);
+            this.menuInvoice.Margin = new System.Windows.Forms.Padding(0, 0, 20, 0);
             this.menuInvoice.Name = "menuInvoice";
-            this.menuInvoice.Size = new System.Drawing.Size(138, 538);
+            this.menuInvoice.Size = new System.Drawing.Size(138, 566);
             this.menuInvoice.TabIndex = 0;
             this.menuInvoice.Text = "menuStrip1";
             // 
@@ -80,9 +81,9 @@
             // 
             // itemSentInvoice
             // 
-            this.itemSentInvoice.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.itemSentInvoice.BackColor = System.Drawing.Color.Teal;
             this.itemSentInvoice.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.itemSentInvoice.Margin = new System.Windows.Forms.Padding(0, 50, 0, 0);
+            this.itemSentInvoice.Margin = new System.Windows.Forms.Padding(0, 40, 0, 0);
             this.itemSentInvoice.Name = "itemSentInvoice";
             this.itemSentInvoice.Padding = new System.Windows.Forms.Padding(5, 5, 5, 0);
             this.itemSentInvoice.Size = new System.Drawing.Size(131, 29);
@@ -90,9 +91,9 @@
             // 
             // itemDraftInvoice
             // 
-            this.itemDraftInvoice.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.itemDraftInvoice.BackColor = System.Drawing.Color.Teal;
             this.itemDraftInvoice.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.itemDraftInvoice.Margin = new System.Windows.Forms.Padding(0, 50, 0, 0);
+            this.itemDraftInvoice.Margin = new System.Windows.Forms.Padding(0, 40, 0, 0);
             this.itemDraftInvoice.Name = "itemDraftInvoice";
             this.itemDraftInvoice.Padding = new System.Windows.Forms.Padding(5, 5, 5, 0);
             this.itemDraftInvoice.Size = new System.Drawing.Size(131, 29);
@@ -100,9 +101,9 @@
             // 
             // itemNewInvoice
             // 
-            this.itemNewInvoice.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.itemNewInvoice.BackColor = System.Drawing.Color.Teal;
             this.itemNewInvoice.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.itemNewInvoice.Margin = new System.Windows.Forms.Padding(0, 50, 0, 0);
+            this.itemNewInvoice.Margin = new System.Windows.Forms.Padding(0, 40, 0, 0);
             this.itemNewInvoice.Name = "itemNewInvoice";
             this.itemNewInvoice.Padding = new System.Windows.Forms.Padding(5, 5, 5, 0);
             this.itemNewInvoice.Size = new System.Drawing.Size(131, 29);
@@ -111,9 +112,10 @@
             // tableGrid
             // 
             this.tableGrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.tableGrid.Location = new System.Drawing.Point(166, 48);
+            this.tableGrid.Location = new System.Drawing.Point(189, 44);
+            this.tableGrid.Margin = new System.Windows.Forms.Padding(10);
             this.tableGrid.Name = "tableGrid";
-            this.tableGrid.Size = new System.Drawing.Size(932, 457);
+            this.tableGrid.Size = new System.Drawing.Size(916, 494);
             this.tableGrid.TabIndex = 12;
             // 
             // lblTitle
@@ -130,7 +132,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.MintCream;
-            this.ClientSize = new System.Drawing.Size(1136, 538);
+            this.ClientSize = new System.Drawing.Size(1136, 566);
             this.Controls.Add(this.lblTitle);
             this.Controls.Add(this.tableGrid);
             this.Controls.Add(this.menuInvoice);

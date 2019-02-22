@@ -9,9 +9,3 @@ C:\Users\gamze\Desktop\izibiz.Application\izibiz.MODEL\obj\Debug\izibiz.MODEL.dl
 C:\Users\gamze\Desktop\izibiz.Application\izibiz.MODEL\obj\Debug\izibiz.MODEL.pdb
 C:\Users\gamze\Desktop\izibiz.Application\izibiz.MODEL\bin\Debug\izibiz.MODEL.dll
 C:\Users\gamze\Desktop\izibiz.Application\izibiz.MODEL\bin\Debug\izibiz.MODEL.pdb
-C:\Users\gamze.sahin\Desktop\izibiz.Application\izibiz.MODEL\bin\Debug\izibiz.MODEL.dll
-C:\Users\gamze.sahin\Desktop\izibiz.Application\izibiz.MODEL\bin\Debug\izibiz.MODEL.pdb
-C:\Users\gamze.sahin\Desktop\izibiz.Application\izibiz.MODEL\obj\Debug\izibiz.MODEL.csprojAssemblyReference.cache
-C:\Users\gamze.sahin\Desktop\izibiz.Application\izibiz.MODEL\obj\Debug\izibiz.MODEL.csproj.CoreCompileInputs.cache
-C:\Users\gamze.sahin\Desktop\izibiz.Application\izibiz.MODEL\obj\Debug\izibiz.MODEL.dll
-C:\Users\gamze.sahin\Desktop\izibiz.Application\izibiz.MODEL\obj\Debug\izibiz.MODEL.pdb
