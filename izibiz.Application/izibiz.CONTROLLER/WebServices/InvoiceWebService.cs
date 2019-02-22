@@ -26,16 +26,16 @@ namespace izibiz.CONTROLLER.Web_Services
                 {
                     REQUEST_HEADER = new REQUEST_HEADERType()
                     {
-                        APPLICATION_NAME = "izibiz.Aplication",
                         SESSION_ID = Session.Default.id,
+                        APPLICATION_NAME = "izibiz.Aplication",        
                         COMPRESSED = "N"
-                    },
-                    HEADER_ONLY = "Y",
+                    },    
                     INVOICE_SEARCH_KEY = new GetInvoiceRequestINVOICE_SEARCH_KEY()
                     {
-                       READ_INCLUDED = true,
                         LIMIT = 100,
-                    }
+                        READ_INCLUDED = true     
+                    },
+                    HEADER_ONLY = "Y"
                 };
 
                 INVOICE[] invoiceArray = EFaturaOIBPortClient.GetInvoice(req);
