@@ -17,7 +17,6 @@ namespace izibiz.CONTROLLER.Web_Services
 
 
 
-
         public List<Invoices> getInvoiceList()
         {
             using (new OperationContextScope(EFaturaOIBPortClient.InnerChannel))
@@ -41,34 +40,44 @@ namespace izibiz.CONTROLLER.Web_Services
                 };
 
                 INVOICE[] invoiceArray = EFaturaOIBPortClient.GetInvoice(req);
-                List<Invoices> setListInvoice = new List<Invoices>();
-                Invoices setInvoice = new Invoices();
+                List<Invoices> invoiceList = new List<Invoices>();
 
-                     foreach(var invoice in invoiceArray)
+                    foreach (var inv in invoiceArray)
+                    {
+                    //GelenFaturalar bos ya da daha once bu FaturaNumarası eklenmemisse ekle
+                    if (DataListInvoice.GelenFaturalar == null || DataListInvoice.GelenFaturalar.Where(x => x.FaturaNumarası == inv.ID).FirstOrDefault() == null)
                         {
-                            setInvoice.FaturaNumarası = invoice.ID;
-                            setInvoice.Ettn = invoice.UUID;
-                            setInvoice.FaturaTarihi = invoice.HEADER.ISSUE_DATE;
-                            setInvoice.Senaryo = invoice.HEADER.PROFILEID;
-                            setInvoice.FaturaTipi = invoice.HEADER.INVOICE_TYPE_CODE;
-                            setInvoice.GönderenUnvan = invoice.HEADER.SUPPLIER;
-                            setInvoice.GönderenVknTckn = invoice.HEADER.SENDER;
-                            setInvoice.UlastıgiTarih = invoice.HEADER.CDATE;
-                            setInvoice.ZarfID = invoice.HEADER.ENVELOPE_IDENTIFIER;
-                            setInvoice.Durum = invoice.HEADER.STATUS;
-                            setInvoice.GibDurum = invoice.HEADER.GIB_STATUS_CODE;
-                            setInvoice.GibDurumAciklama = invoice.HEADER.GIB_STATUS_DESCRIPTION;
-                            setInvoice.UygulamaYanitDurumu = invoice.UUID;
-                            setInvoice.GönderenGB = invoice.HEADER.FROM;
-                            setInvoice.AlıcıPK = invoice.HEADER.TO;
+                        Invoices invoice = new Invoices();
+                        invoice.FaturaNumarası = inv.ID;
+                        invoice.Ettn = inv.UUID;
+                        invoice.FaturaTarihi = inv.HEADER.ISSUE_DATE;
+                        invoice.Senaryo = inv.HEADER.PROFILEID;
+                        invoice.FaturaTipi = inv.HEADER.INVOICE_TYPE_CODE;
+                        invoice.GönderenUnvan = inv.HEADER.SUPPLIER;
+                        invoice.GönderenVknTckn = inv.HEADER.SENDER;
+                        invoice.UlastıgiTarih = inv.HEADER.CDATE;
+                        invoice.ZarfID = inv.HEADER.ENVELOPE_IDENTIFIER;
+                        invoice.Durum = inv.HEADER.STATUS;
+                        invoice.GibDurum = inv.HEADER.GIB_STATUS_CODE;
+                        invoice.GibDurumAciklama = inv.HEADER.GIB_STATUS_DESCRIPTION;
+                        invoice.UygulamaYanitDurumu = inv.UUID;
+                        invoice.GönderenGB = inv.HEADER.FROM;
+                        invoice.AlıcıPK = inv.HEADER.TO;
 
-                            setListInvoice.Add(setInvoice);
-                        };
+                        invoiceList.Add(invoice);
+                    }                 
+                }
 
-        //        DataListInvoice.GelenFaturalar =setListInvoice;
-                return setListInvoice;    
+                if (DataListInvoice.GelenFaturalar==null)
+                {
+                    DataListInvoice.GelenFaturalar=invoiceList;
+                }
+                else
+                {
+                    DataListInvoice.GelenFaturalar.AddRange(invoiceList);
+                }       
+                return DataListInvoice.GelenFaturalar;    
             }
-
         }
 
 
