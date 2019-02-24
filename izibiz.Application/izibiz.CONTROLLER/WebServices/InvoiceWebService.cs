@@ -45,24 +45,24 @@ namespace izibiz.CONTROLLER.Web_Services
                     foreach (var inv in invoiceArray)
                     {
                     //GelenFaturalar bos ya da daha once bu FaturaNumarası eklenmemisse ekle
-                    if (DataListInvoice.GelenFaturalar == null || DataListInvoice.GelenFaturalar.Where(x => x.FaturaNumarası == inv.ID).FirstOrDefault() == null)
+                    if (DataListInvoice.GelenFaturalar == null || DataListInvoice.GelenFaturalar.Where(x => x.faturaNumarası == inv.ID).FirstOrDefault() == null)
                         {
                         Invoices invoice = new Invoices();
-                        invoice.FaturaNumarası = inv.ID;
-                        invoice.Ettn = inv.UUID;
-                        invoice.FaturaTarihi = inv.HEADER.ISSUE_DATE;
-                        invoice.Senaryo = inv.HEADER.PROFILEID;
-                        invoice.FaturaTipi = inv.HEADER.INVOICE_TYPE_CODE;
-                        invoice.GönderenUnvan = inv.HEADER.SUPPLIER;
-                        invoice.GönderenVknTckn = inv.HEADER.SENDER;
-                        invoice.UlastıgiTarih = inv.HEADER.CDATE;
-                        invoice.ZarfID = inv.HEADER.ENVELOPE_IDENTIFIER;
-                        invoice.Durum = inv.HEADER.STATUS;
-                        invoice.GibDurum = inv.HEADER.GIB_STATUS_CODE;
-                        invoice.GibDurumAciklama = inv.HEADER.GIB_STATUS_DESCRIPTION;
-                        invoice.UygulamaYanitDurumu = inv.UUID;
-                        invoice.GönderenGB = inv.HEADER.FROM;
-                        invoice.AlıcıPK = inv.HEADER.TO;
+                        invoice.faturaNumarası = inv.ID;
+                        invoice.ettn = inv.UUID;
+                        invoice.faturaTarihi = inv.HEADER.ISSUE_DATE;
+                        invoice.senaryo = inv.HEADER.PROFILEID;
+                        invoice.faturaTipi = inv.HEADER.INVOICE_TYPE_CODE;
+                        invoice.gönderenUnvan = inv.HEADER.SUPPLIER;
+                        invoice.gönderenVknTckn = inv.HEADER.SENDER;
+                        invoice.ulastıgiTarih = inv.HEADER.CDATE;
+                        invoice.zarfID = inv.HEADER.ENVELOPE_IDENTIFIER;
+                        invoice.durum = inv.HEADER.STATUS;
+                        invoice.gibDurum = inv.HEADER.GIB_STATUS_CODE;
+                        invoice.gibDurumAciklama = inv.HEADER.GIB_STATUS_DESCRIPTION;
+                        invoice.uygulamaYanitDurumu = inv.UUID;
+                        invoice.gönderenGB = inv.HEADER.FROM;
+                        invoice.alıcıPK = inv.HEADER.TO;
 
                         invoiceList.Add(invoice);
                     }                 
