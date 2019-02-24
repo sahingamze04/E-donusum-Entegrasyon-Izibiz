@@ -71,7 +71,7 @@
             this.btnFatura.ForeColor = System.Drawing.Color.Snow;
             this.btnFatura.Location = new System.Drawing.Point(12, 36);
             this.btnFatura.Name = "btnFatura";
-            this.btnFatura.Size = new System.Drawing.Size(141, 118);
+            this.btnFatura.Size = new System.Drawing.Size(141, 125);
             this.btnFatura.TabIndex = 26;
             this.btnFatura.Text = "E-Fatura";
             this.btnFatura.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -109,7 +109,7 @@
             this.btnArsiv.ForeColor = System.Drawing.SystemColors.HighlightText;
             this.btnArsiv.Location = new System.Drawing.Point(216, 36);
             this.btnArsiv.Name = "btnArsiv";
-            this.btnArsiv.Size = new System.Drawing.Size(141, 118);
+            this.btnArsiv.Size = new System.Drawing.Size(141, 125);
             this.btnArsiv.TabIndex = 25;
             this.btnArsiv.Text = "E-Arşiv";
             this.btnArsiv.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -146,7 +146,7 @@
             this.btnIrsaliye.ForeColor = System.Drawing.SystemColors.HighlightText;
             this.btnIrsaliye.Location = new System.Drawing.Point(420, 36);
             this.btnIrsaliye.Name = "btnIrsaliye";
-            this.btnIrsaliye.Size = new System.Drawing.Size(141, 118);
+            this.btnIrsaliye.Size = new System.Drawing.Size(141, 125);
             this.btnIrsaliye.TabIndex = 24;
             this.btnIrsaliye.Text = "E-İrsaliye";
             this.btnIrsaliye.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
