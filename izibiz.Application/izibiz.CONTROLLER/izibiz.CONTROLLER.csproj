@@ -31,8 +31,13 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Ionic.Zip">
+      <HintPath>..\..\..\..\..\..\Downloads\zip-v1.9\Debug\Ionic.Zip.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.IO.Compression" />
+    <Reference Include="System.IO.Compression.FileSystem" />
     <Reference Include="System.ServiceModel" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml.Linq" />
@@ -43,12 +48,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="InvoiceSearchKey.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Session.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTimeSharedInput>True</DesignTimeSharedInput>
-      <DependentUpon>Session.settings</DependentUpon>
-    </Compile>
+    <Compile Include="RequestHeader.cs" />
     <Compile Include="Singleton\Singleton.cs" />
     <Compile Include="WebServices\AuthenticationController.cs" />
     <Compile Include="WebServices\EInvoiceController.cs" />
@@ -65,10 +67,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-    <None Include="Session.settings">
-      <Generator>SettingsSingleFileGenerator</Generator>
-      <LastGenOutput>Session.Designer.cs</LastGenOutput>
-    </None>
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -12,23 +12,25 @@ namespace izibiz.CONTROLLER.Web_Services
     public class AuthenticationController
     {
 
-        AuthenticationServicePortClient Auth = new AuthenticationServicePortClient();
-        private REQUEST_HEADERType authRequestHeader;
+        AuthenticationServicePortClient Auth;
+        REQUEST_HEADERType authRequestHeader;
+        public static string sesionID;
 
 
         public AuthenticationController()
         {
-            #region createRequestHeader   
+            Auth = new AuthenticationServicePortClient();
+        }
+
+        private  REQUEST_HEADERType createAuthRequestHeader()
+        {
             authRequestHeader = new REQUEST_HEADERType()
             {
                 SESSION_ID = "-1",
-                APPLICATION_NAME = "İZİBİZ MASAUSTU V1.0",
-                CHANNEL_NAME = "İZİBİZ",
-                HOSTNAME = "HOST-İZİBİZ-DEFAULT"
+                APPLICATION_NAME = "izibiz.Application",
             };
-            #endregion
+            return authRequestHeader;
         }
-
 
 
 
@@ -36,26 +38,23 @@ namespace izibiz.CONTROLLER.Web_Services
         {
             var req = new LoginRequest
             {
-                REQUEST_HEADER = authRequestHeader,
+                REQUEST_HEADER = createAuthRequestHeader(),
                 USER_NAME = usurname,
                 PASSWORD = password
             };
             LoginResponse loginRes = Auth.Login(req);
 
-            if (loginRes.SESSION_ID != null)
+            if (loginRes.ERROR_TYPE == null)
             {
-                string sesionId = loginRes.SESSION_ID;
-                Session.Default.id = sesionId;
-                if(EInvoiceController.requestHeader != null)
-                {
-                    EInvoiceController.createRequestHeader();
-                }
+                sesionID = loginRes.SESSION_ID;
+                RequestHeader.createRequestHeader();
                 return true;
             }
             else
             {
+                MessageBox.Show(loginRes.ERROR_TYPE.ERROR_CODE + " " + loginRes.ERROR_TYPE.ERROR_SHORT_DES);
                 return false;
-            }       
+            }
         }
 
 
