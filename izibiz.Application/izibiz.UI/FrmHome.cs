@@ -1,5 +1,4 @@
-﻿using izibiz.UI.Languages;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -9,6 +8,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using izibiz.COMMON.Language;
+
 
 namespace izibiz.UI
 {
@@ -33,23 +34,22 @@ namespace izibiz.UI
             //dil secimini sorgula
             if (Settings.Default.language == "English")
             {
-                Localization.Culture = new CultureInfo("en-US");
+                Lang.Culture = new CultureInfo("en-US");
             }
             else
             {
-                Localization.Culture = new CultureInfo("");
+                Lang.Culture = new CultureInfo("");
             }
 
             #region writeFormInItem
             //eleman text yazdır
-            this.Text = Localization.formHomePage;
-            btnInvoice.Text = Localization.eInvoice;
-            btnArchive.Text = Localization.eArchive;
-            btnIrsaliye.Text = Localization.eDispatch;
-            btnAyarlar.Text =Localization.settings;
-            btnMutabakat.Text =Localization.eReconciliation;
-            btnSmm.Text = Localization.eFreeJob;
-            btnMüstahsil.Text = Localization.eManufacturer;
+            this.Text = Lang.formHomePage;
+            btnInvoice.Text = Lang.eInvoice;
+            btnArchive.Text = Lang.eArchive;
+            btnIrsaliye.Text = Lang.eDispatch;
+            btnMutabakat.Text = Lang.eReconciliation;
+            btnSmm.Text = Lang.eFreeJob;
+            btnMüstahsil.Text = Lang.eManufacturer;
             #endregion
         }
 
@@ -60,5 +60,33 @@ namespace izibiz.UI
             this.Hide();
         }
 
+        private void btnArchive_Click(object sender, EventArgs e)
+        {
+            FrmArchive frmArchive = new FrmArchive();
+            frmArchive.Show();
+            this.Hide();
+        }
+
+
+        private void FrmHome_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
+        }
+
+
+
+        private void btnIrsaliye_Click(object sender, EventArgs e)
+        {
+            FrmDespatch frmDespatch = new FrmDespatch();
+            frmDespatch.Show();
+            this.Hide();
+        }
+
+        private void BtnMutabakat_Click(object sender, EventArgs e)
+        {
+            FrmReconcilation frmReconsilation = new FrmReconcilation();
+            frmReconsilation.Show();
+            this.Hide();
+        }
     }
 }
